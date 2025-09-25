@@ -115,5 +115,5 @@ if ($row && password_verify($pass, $row['password'])) {
 ## References
 
 - Product page: https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/
-- This advisory: https://github.com/romatdibrohiksnov/vulndb.com/blob/main/README.md
+- This advisory: https://github.com/romatdibrohiksnov/vulndb.com/blob/main/PHPGurukul%20User%20Registration%20%26%20Login%20and%20User%20Management%20System%20v3.3%20%20SQL%20Injection%20%E2%86%92%20Unauthenticated%20Admin%20Login%20Bypass.md
 
