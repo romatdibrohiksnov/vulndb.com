@@ -1,2 +1,0 @@
-# vulndb.com
-submissions
