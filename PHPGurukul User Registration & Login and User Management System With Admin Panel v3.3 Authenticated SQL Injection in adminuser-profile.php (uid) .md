@@ -1,4 +1,4 @@
-# Advisory: Authenticated SQL Injection in /admin/user-profile.php (uid) — User Registration & Login and User Management System With Admin Panel v3.3
+# PHPGurukul User Registration & Login and User Management System With Admin Panel v3.3 Authenticated SQL Injection in adminuser-profile.php (uid) 
 
 ## Summary
 An authenticated SQL Injection vulnerability exists in the admin user profile page (`/admin/user-profile.php`) of “User Registration & Login and User Management System With Admin Panel” version 3.3. The `uid` GET parameter is concatenated directly into a SQL query, enabling time-based and boolean-based blind SQL injection.
@@ -75,23 +75,13 @@ See the “Patch snippet” section below for `admin/user-profile.php`.
 
 ## Timeline
 - Discovery: 2025-09-25
-- Vendor Notification: TBA
-- Public Disclosure: TBA
 
 ## References
 - Product page (version reference): PHPGurukul “User Registration & Login and User Management System With Admin Panel” (v3.3)
 - Internal code evidence: repository file `loginsystem/admin/user-profile.php`
 
-## Credits
-- Reporter: [your-name]
-- Coordination: [optional CNA/Platform if applicable]
-
 ## Appendix: Suggested sqlmap commands
 - Enumerate current DB with boolean-based blind:
 ```bash
 python.exe C:\sqlmap\sqlmap.py -u "http://localhost/loginsystem/admin/user-profile.php?uid=1" --cookie="PHPSESSID=your_admin_cookie_here" -p uid --technique=B --risk=3 --level=5 --current-db
-```
-- Replay captured request (exact headers/cookies), time-based:
-```bash
-python.exe C:\sqlmap\sqlmap.py -r C:\Users\pxthe\Desktop\user-profile.txt -p uid --technique=T --time-sec=10 --delay=1 --timeout=30 --retries=3 --keep-alive --random-agent --dbs
 ```
