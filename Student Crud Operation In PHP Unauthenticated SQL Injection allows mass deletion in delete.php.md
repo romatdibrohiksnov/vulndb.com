@@ -119,19 +119,16 @@ if ($ok) {
 ?>
 ```
 
+## References
+
+- Project homepage: https://code-projects.org/student-crud-operation-in-php-with-source-code/ <mcreference link="https://code-projects.org/student-crud-operation-in-php-with-source-code/" index="0">0</mcreference>
+- Source download page: https://download.code-projects.org/details/c4836779-1828-4e2b-95c2-e027096314c6 <mcreference link="https://download.code-projects.org/details/c4836779-1828-4e2b-95c2-e027096314c6" index="1">1</mcreference>
+
+
 ## Disclosure Timeline
 
 - 2025-09-29: Vulnerability identified and verified with PoC.
 - 2025-09-29: Advisory prepared for public disclosure and CVE submission.
 
-## Credits
 
-- Reported by: px
-
-## References
-
-- Project files:
-  - <mcfile name="delete.php" path="c:\Downloads\Student_Crud_Operation_In_PHP_With_Source_Code\Student-Registration-Crud-Operation\delete.php"></mcfile>
-  - <mcfile name="db.php" path="c:\Downloads\Student_Crud_Operation_In_PHP_With_Source_Code\Student-Registration-Crud-Operation\db.php"></mcfile>
-  - <mcfile name="index.php" path="c:\Downloads\Student_Crud_Operation_In_PHP_With_Source_Code\Student-Registration-Crud-Operation\index.php"></mcfile>
 
